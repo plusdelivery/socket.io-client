@@ -65,7 +65,7 @@ class Socket extends Emitter {
     /**
      * Whether the Socket will try to reconnect when its Manager connects or reconnects
      */
-    get active() {
+    active() {
         return !!this.subs;
     }
     /**
@@ -396,7 +396,7 @@ class Socket extends Emitter {
      * @returns self
      * @public
      */
-    get volatile() {
+    volatile() {
         this.flags.volatile = true;
         return this;
     }

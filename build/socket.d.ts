@@ -36,7 +36,7 @@ export declare class Socket extends Emitter {
     /**
      * Whether the Socket will try to reconnect when its Manager connects or reconnects
      */
-    get active(): boolean;
+    active(): boolean;
     /**
      * "Opens" the socket.
      *
@@ -173,7 +173,7 @@ export declare class Socket extends Emitter {
      * @returns self
      * @public
      */
-    get volatile(): this;
+    volatile(): this;
     /**
      * Adds a listener that will be fired when any event is emitted. The event name is passed as the first argument to the
      * callback.
